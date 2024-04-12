@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildYourOwnPC</title>
+    <script src="index.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; }
+        .step { margin-bottom: 20px; }
+        select, button { width: 100%; padding: 10px; margin-top: 5px; }
+        button { background-color: #4CAF50; color: white; }
+        .specs { background-color: #00cec9; padding: 20px; color: white; }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <h1>Build Your Own PC</h1>
+    
+    <div class="step">
+      <label for="cpuBrand">Step 1: Select your CPU</label>
+      <select id="cpuBrand">
+        <!-- Options for CPU Brand -->
+        <option value="" disabled selected>Choose CPU brand</option>
+  
+      </select>
+      <select id="cpuModel">
+        <!-- Options for CPU Model -->
+        <option value="" disabled selected>Choose CPU model</option>
+      </select>
+    </div>
+    
+    <div class="step">
+      <label for="gpuBrand">Step 2: Select your GPU</label>
+      <select id="gpuBrand">
+        <!-- Options for GPU Brand -->
+        <option value="" disabled selected>Choose GPU brand</option>
+      </select>
+      <select id="gpuModel">
+        <!-- Options for GPU Model -->
+        <option value="" disabled selected>Choose GPU model</option>
+      </select>
+    </div>
+    
+    <div class="step">
+      <label for="memoryCard">Step 3: Select your memory card</label>
+      <select id="memoryAmount">
+        <!-- Options for Memory Amount -->
+        <option value="" disabled selected>Choose Memory Amount</option>
+      </select>
+      <select id="memoryBrand">
+        <!-- Options for Memory Brand -->
+        <option value="" disabled selected>Choose Memory brand</option>
+      </select>
+      <select id="memoryModel">
+        <!-- Options for Memory Model -->
+        <option value="" disabled selected>Choose Memory model</option>
+      </select>
+    </div>
+    
+    <div class="step">
+      <label for="storageType">Step 4: Select your storage</label>
+      <select id="storageType">
+        <!-- Options for HDD or SSD -->
+        <option value="" disabled selected>Choose HDD or SSD </option>
+        <option value="HDD">HDD </option>
+        <option value="SSD">SSD </option>
+  
+  
+      </select>
+      <select id="storageSize">
+        <!-- Options for Storage Size -->
+        <option value="" disabled selected>Storage size</option>
+      </select>
+      <select id="storageBrand">
+        <!-- Options for Storage Brand -->
+        <option value="" disabled selected>Choose Storage Brand</option>
+      </select>
+      <select id="storageModel">
+        <!-- Options for Storage Model -->
+        <option value="" disabled selected>Choose Storage model</option>
+      </select>
+    </div>
+    
+    <button type="button">Add PC</button>
+    
+    <div class="specs">
+      <p>Gaming: <span id="gameBenchmark"></span></p>
+      <p>Work: <span id="workBenchmark"></span></p>
+    </div>
+    
+  </div>
+</body>
+</html>
